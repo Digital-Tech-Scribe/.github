@@ -10,14 +10,15 @@ Welcome to the official GitHub home of Digital Tech Scribe. We are dedicated to 
 - **Social Strategy:** Setting up and automating social presence to drive engagement.
 
 ### 🛠️ Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript, React
+- **Frontend:** HTML5, CSS3, JavaScript, React, PHP
 - **CMS:** WordPress, Webflow
 - **Tools:** Git, GitHub Actions, Social Media API Integrations
 
 ### 📬 Connect With Us
 - **Website:** [Insert Link]
-- **Services:** [Insert Link to Portfolio]
-- **LinkedIn:** [Insert Link]
+- **Services:** [https://github.com/Digital-Tech-Scribe]
+- **LinkedIn:** [https://www.linkedin.com/company/109257913/admin/dashboard/]
+- **TikTok:** [https://vm.tiktok.com/ZS91fvTrynM3K-IjdZf/]
 
 ---
 "Helping you navigate the digital landscape, one line of code at a time."
