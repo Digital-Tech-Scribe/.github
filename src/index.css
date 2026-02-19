@@ -1,0 +1,323 @@
+/* ============================================
+   DESIGN TOKENS — Full CSS Custom Properties
+   ============================================ */
+:root {
+  /* Core colours */
+  --color-bg:                  #0A0A0F;
+  --color-surface:             #12121A;
+  --color-border:              #1E1E2E;
+  --color-border-light:        rgba(108, 99, 255, 0.25);
+
+  /* Accent — electric violet */
+  --color-accent:              #6C63FF;
+  --color-accent-glow:         rgba(108, 99, 255, 0.25);
+  --color-accent-glow-strong:  rgba(108, 99, 255, 0.55);
+
+  /* Gold — premium / trust */
+  --color-gold:                #F5A623;
+  --color-gold-glow:           rgba(245, 166, 35, 0.20);
+
+  /* Text */
+  --color-text-primary:        #F0F0F5;
+  --color-text-secondary:      #C8C8D8;
+  --color-text-muted:          #8888AA;
+
+  /* Status */
+  --color-success:             #22C55E;
+  --color-error:               #EF4444;
+
+  /* Typography */
+  --font-display:              'Outfit', sans-serif;
+  --font-body:                 'Inter', sans-serif;
+
+  /* Layout */
+  --navbar-height:             72px;
+
+  /* Border radius */
+  --radius-sm:                 6px;
+  --radius-md:                 12px;
+  --radius-lg:                 16px;
+  --radius-xl:                 24px;
+  --radius-full:               9999px;
+
+  /* Spacing scale */
+  --space-xs:                  4px;
+  --space-sm:                  8px;
+  --space-md:                  16px;
+  --space-lg:                  24px;
+  --space-xl:                  32px;
+  --space-2xl:                 48px;
+  --space-3xl:                 64px;
+  --space-4xl:                 80px;
+  --space-5xl:                 120px;
+
+  /* Transitions */
+  --transition-fast:           0.15s ease;
+  --transition-base:           0.25s ease;
+  --transition-slow:           0.45s ease;
+
+  /* Shadows */
+  --shadow-md:                 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg:                 0 8px 32px rgba(0, 0, 0, 0.45);
+  --shadow-accent:             0 8px 32px rgba(108, 99, 255, 0.25);
+  --shadow-accent-strong:      0 0 40px rgba(108, 99, 255, 0.40);
+  --shadow-gold:               0 8px 32px rgba(245, 166, 35, 0.25);
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea, select {
+  font-family: var(--font-body);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+.text-center  { text-align: center; }
+.text-accent  { color: var(--color-accent); }
+.text-gold    { color: var(--color-gold); }
+
+/* ============================================
+   SECTION TYPOGRAPHY UTILITIES
+   (used by ServicesSection, HowItWorks, etc.)
+   ============================================ */
+.section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.875rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: 1.0625rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  max-width: 540px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-accent) 0%, #A78BFA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.875rem 1.75rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: var(--shadow-accent);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent-strong);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1.5px solid var(--color-border);
+}
+.btn-ghost:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-gold {
+  background: var(--color-gold);
+  color: #0A0A0F;
+  box-shadow: var(--shadow-gold);
+  font-weight: 700;
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 36px rgba(245, 166, 35, 0.45);
+}
+
+/* ============================================
+   SCROLL REVEAL — used by ScrollReveal.tsx
+   ============================================ */
+.reveal,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal         { transform: translateY(32px); }
+.reveal-left    { transform: translateX(-40px); }
+.reveal-right   { transform: translateX(40px); }
+
+.reveal.visible,
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
+
+/* Used by HeroSection orbs, platform badges, stat cards */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+/* Used by HeroSection scroll indicator */
+@keyframes slideDown {
+  0%   { transform: scaleY(0); opacity: 0; transform-origin: top; }
+  50%  { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(0); opacity: 0; transform-origin: bottom; }
+}
+
+/* Used by HeroSection text content, LoadingScreen logo */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Used by LoadingScreen logo, visual */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Used by LoadingScreen glow ring, spinner */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Used by badge pulse dots */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 var(--color-accent-glow); }
+  50%       { opacity: 0.7; box-shadow: 0 0 12px 4px var(--color-accent-glow); }
+}
+
+/* Generic fade in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* CTA Banner top border shimmer */
+@keyframes shimmer {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+/* LoadingScreen progress bar */
+@keyframes loadProgress {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+/* Generic spin for form spinner */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+  .container {
+    padding: 0 var(--space-md);
+  }
+}

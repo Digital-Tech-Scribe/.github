@@ -1,0 +1,33 @@
+{
+    "name": "digital-tech-scribe",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "client": "vite",
+        "server": "node server/index.js",
+        "build": "tsc -b && vite build",
+        "lint": "eslint .",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.22.0",
+        "lucide-react": "^0.344.0",
+        "resend": "^3.2.0",
+        "@upstash/redis": "^1.28.4",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "dotenv": "^16.4.1"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18.3.1",
+        "@vitejs/plugin-react": "^4.3.4",
+        "typescript": "~5.6.2",
+        "vite": "^6.0.5",
+        "concurrently": "^8.2.2"
+    }
+}
