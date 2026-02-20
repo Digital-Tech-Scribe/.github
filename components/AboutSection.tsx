@@ -2,9 +2,9 @@ import ScrollReveal from './ScrollReveal';
 import styles from './AboutSection.module.css';
 
 const stats = [
-  { value: '100%', label: 'Client Focused' },
-  { value: '5+', label: 'Platforms Covered' },
-  { value: '∞', label: 'Dedication' },
+  { value: 'React.js', label: 'Framework' },
+  { value: 'UI/UX', label: 'Web Design' },
+  { value: 'B.Sc.', label: 'Building Tech' },
 ];
 
 export default function AboutSection() {
@@ -34,13 +34,34 @@ export default function AboutSection() {
                   </svg>
                 </div>
                 <div className={styles.cardInfo}>
-                  <span className={styles.cardName}>Solo Founder & CEO</span>
-                  <span className={styles.cardRole}>Digital Tech Scribe</span>
+                  <span className={styles.cardName}>Andrew (Chukwudiebie) Onukwu</span>
+                  <span className={styles.cardRole}>Front-End Developer & Founder</span>
                 </div>
-                {/* Status badge */}
-                <div className={styles.statusBadge}>
-                  <span className={styles.statusDot} />
-                  <span>Available for new projects</span>
+                {/* Contact Badges */}
+                <div style={{ display: 'flex', gap: '12px', width: '100%', justifyContent: 'center', flexWrap: 'wrap' }}>
+                  <a 
+                    href="https://www.linkedin.com/in/andrew-onukwu-5b4a7a22a/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className={styles.statusBadge}
+                    style={{ textDecoration: 'none', transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <span style={{ fontWeight: 600, color: 'var(--color-text-primary)'}}>LinkedIn</span>
+                  </a>
+                  <a 
+                    href="mailto:digitaltechscribe@gmail.com" 
+                    className={styles.statusBadge}
+                    style={{ textDecoration: 'none', transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span style={{ fontWeight: 600, color: 'var(--color-text-primary)'}}>Email Me</span>
+                  </a>
                 </div>
               </div>
 
@@ -71,40 +92,14 @@ export default function AboutSection() {
 
               <div className={styles.body}>
                 <p>
-                  I'm the founder and sole operator of Digital Tech Scribe — and that's not a limitation, it's a strength. When you work with me, you get my undivided attention, my full creative energy, and my personal commitment to your success.
+                  Founding Digital Tech Scribe in June 2024, I've been leveraging my deep understanding of web development and responsive design to lead the company towards innovative solutions. My core competencies in front-end development ensure that our projects resonate with tech-savvy clients, solidifying our reputation as a forward-thinking leader in our industry.
                 </p>
                 <p>
-                  I started this business because I saw too many great businesses being invisible online. Talented entrepreneurs, passionate shop owners, and ambitious brands — all struggling to be found. That's where I come in.
-                </p>
-                <p>
-                  Whether it's building your website from scratch, managing your social media presence, or crafting content that actually resonates — I treat every project like it's my own business on the line.
+                  With me, you aren't just getting another agency — you are getting a dedicated Professional Builder. With a Bachelor of Science in Building Construction Technology from Ambrose Alli University, my educational background incredibly enriches my approach to driving growth, structuring complex problem-solving, and delivering absolute excellence in your digital presence.
                 </p>
               </div>
 
               <div className={styles.values}>
-                <div className={styles.value}>
-                  <div className={styles.valueIcon}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <strong>Trust First</strong>
-                    <p>Your brand's reputation is treated with the same care as my own.</p>
-                  </div>
-                </div>
-                <div className={styles.value}>
-                  <div className={styles.valueIcon}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="M12 8v4l3 3" />
-                    </svg>
-                  </div>
-                  <div>
-                    <strong>Fast Turnaround</strong>
-                    <p>No agency delays. Direct communication, quick delivery.</p>
-                  </div>
-                </div>
                 <div className={styles.value}>
                   <div className={styles.valueIcon}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -113,8 +108,33 @@ export default function AboutSection() {
                     </svg>
                   </div>
                   <div>
-                    <strong>Results Driven</strong>
-                    <p>Every strategy is built around your specific business goals.</p>
+                    <strong>Chief Executive Officer — Digital Tech Scribe</strong>
+                    <p>Leading the vision and execution of premium responsive web design and tailored digital development solutions.</p>
+                  </div>
+                </div>
+                <div className={styles.value}>
+                  <div className={styles.valueIcon}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <polyline points="16 18 22 12 16 6" />
+                      <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Lead Software Developer — CDAC</strong>
+                    <p>Spearheading software development, advanced problem-solving, and driving digital accountability initiatives.</p>
+                  </div>
+                </div>
+                <div className={styles.value}>
+                  <div className={styles.valueIcon}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                      <polyline points="2 17 12 22 22 17" />
+                      <polyline points="2 12 12 17 22 12" />
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Construction Project Manager — Tiles & Fitt Ltd</strong>
+                    <p>Merging building construction site management logic with robust technical front-end development capabilities.</p>
                   </div>
                 </div>
               </div>
