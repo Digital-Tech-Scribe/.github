@@ -16,22 +16,8 @@ export default function AboutSection() {
           <ScrollReveal direction="left">
             <div className={styles.visual}>
               <div className={styles.card}>
-                {/* Avatar placeholder */}
                 <div className={styles.avatar}>
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
+                  <img src="/CEO.webp" alt="Andrew Onukwu - CEO of Digital Tech Scribe" />
                 </div>
                 <div className={styles.cardInfo}>
                   <span className={styles.cardName}>Andrew (Chukwudiebie) Onukwu</span>
@@ -92,10 +78,10 @@ export default function AboutSection() {
 
               <div className={styles.body}>
                 <p>
-                  Founding Digital Tech Scribe in June 2024, I've been leveraging my deep understanding of web development and responsive design to lead the company towards innovative solutions. My core competencies in front-end development ensure that our projects resonate with tech-savvy clients, solidifying our reputation as a forward-thinking leader in our industry.
+                  <strong>Digital Tech Scribe</strong> exists to bridge the gap between small-scale startups and the global recognition they deserve. I help businesses dominate the digital landscape through strategic web development, viral social media content, and high-impact design that commands instant authority.
                 </p>
                 <p>
-                  With me, you aren't just getting another agency — you are getting a dedicated Professional Builder. With a Bachelor of Science in Building Construction Technology from Ambrose Alli University, my educational background incredibly enriches my approach to driving growth, structuring complex problem-solving, and delivering absolute excellence in your digital presence.
+                  Currently operating as a dedicated "lone wolf" founder, I provide bridge-building solutions and 100% accountability. My mission is to ensure that from the very first glance, your brand conveys the trust, assurance, and professional excellence needed to scale in a competitive digital world.
                 </p>
               </div>
 
