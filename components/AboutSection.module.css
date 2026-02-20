@@ -4,10 +4,11 @@
 }
 
 .inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-4xl);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: var(--space-3xl);
+  text-align: center;
 }
 
 /* --- Visual Side --- */
@@ -154,12 +155,16 @@
 .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
   gap: var(--space-lg);
 }
 
 .divider {
-  width: 60px;
+  width: 80px;
   height: 3px;
+  margin: 0 auto;
   background: linear-gradient(90deg, var(--color-accent), var(--color-gold));
   border-radius: var(--radius-full);
 }

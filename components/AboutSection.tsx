@@ -13,7 +13,7 @@ export default function AboutSection() {
       <div className="container">
         <div className={styles.inner}>
           {/* Visual Side */}
-          <ScrollReveal direction="left">
+          <ScrollReveal direction="up">
             <div className={styles.visual}>
               <div className={styles.card}>
                 <div className={styles.avatar}>
@@ -67,7 +67,7 @@ export default function AboutSection() {
           </ScrollReveal>
 
           {/* Text Side */}
-          <ScrollReveal direction="right">
+          <ScrollReveal direction="up">
             <div className={styles.content}>
               <span className="section-label">About</span>
               <h2 className="section-title">
