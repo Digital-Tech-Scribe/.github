@@ -17,7 +17,7 @@ export default function AboutSection() {
             <div className={styles.visual}>
               <div className={styles.card}>
                 <div className={styles.avatar}>
-                  <img src="/CEO.webp" alt="Andrew Onukwu - CEO of Digital Tech Scribe" />
+                  <img src="CEO.webp" alt="Andrew Onukwu - CEO of Digital Tech Scribe" />
                 </div>
                 <div className={styles.cardInfo}>
                   <span className={styles.cardName}>Andrew (Chukwudiebie) Onukwu</span>
