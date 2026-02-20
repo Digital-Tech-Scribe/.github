@@ -6,6 +6,7 @@ import LoadingScreen from '../components/LoadingScreen';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Success from './pages/Success';
+import Portfolio from './pages/Portfolio';
 
 function App() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/success" element={<Success />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </main>
       <Footer />
