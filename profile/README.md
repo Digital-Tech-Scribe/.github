@@ -15,8 +15,8 @@ Welcome to the official GitHub home of Digital Tech Scribe. We are dedicated to 
 - **Tools:** Git, GitHub Actions, Social Media API Integrations
 
 ### 📬 Connect With Us
-- **Website:** [Insert Link]
-- **Services:** [Portfolio](https://github.com/Digital-Tech-Scribe)
+- **Website:** [Link](https://www.digitaltechscribe.com)
+- **Services:** [Link](https://github.com/Digital-Tech-Scribe)
 - **LinkedIn:** [Link](https://www.linkedin.com/company/digital-tech-scribe/)
 - **TikTok:** [Link](https://vm.tiktok.com/ZS91fvTrynM3K-IjdZf/)
 
