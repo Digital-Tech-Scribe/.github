@@ -77,7 +77,7 @@ export default function Footer() {
           <div className={styles.brand}>
             <Link to="/" className={styles.logo}>
               <img 
-                src="favicon.png" 
+                src="logo.png" 
                 alt="Digital Tech Scribe Logo" 
                 width="32"
                 height="32"

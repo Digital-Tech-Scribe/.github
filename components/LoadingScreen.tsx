@@ -32,7 +32,7 @@ export default function LoadingScreen() {
         {/* Animated Logo */}
         <div className={styles.logoWrap}>
           <img 
-            src="favicon.png" 
+            src="logo.png" 
             alt="Digital Tech Scribe Logo" 
             className={styles.logoImg}
           />

@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className={styles.logo} onClick={closeMenu}>
           <img 
-            src="favicon.png" 
+            src="logo.png" 
             alt="Digital Tech Scribe Logo" 
             className={styles.logoImg}
             aria-hidden="true"
