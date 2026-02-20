@@ -76,34 +76,14 @@ export default function Footer() {
           {/* Brand Column */}
           <div className={styles.brand}>
             <Link to="/" className={styles.logo}>
-              <svg
+              <img 
+                src="favicon.png" 
+                alt="Digital Tech Scribe Logo" 
                 width="32"
                 height="32"
-                viewBox="0 0 36 36"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                style={{ borderRadius: '6px' }}
                 aria-hidden="true"
-              >
-                <rect width="36" height="36" rx="8" fill="url(#footerLogoGrad)" />
-                <path
-                  d="M22 8L28 14L16 26L10 28L12 22L22 8Z"
-                  fill="none"
-                  stroke="#F0F0F5"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path d="M12 22L10 28" stroke="#F5A623" strokeWidth="1.5" strokeLinecap="round" />
-                <path d="M24 6C26.5 8.5 27.5 12 26 15" stroke="#F5A623" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-                <circle cx="10" cy="28" r="1.5" fill="#F5A623" />
-                <circle cx="16" cy="26" r="1" fill="#6C63FF" />
-                <defs>
-                  <linearGradient id="footerLogoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#1A1A2E" />
-                    <stop offset="1" stopColor="#0A0A1F" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              />
               <span className={styles.logoText}>
                 Digital Tech <span className={styles.logoAccent}>Scribe</span>
               </span>

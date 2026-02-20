@@ -28,9 +28,10 @@
   justify-content: center;
 }
 
-.logoSvg {
-  width: 72px;
-  height: 72px;
+.logoImg {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
   animation: scaleIn 0.5s ease 0.2s both, pulseGlow 2s ease-in-out 0.7s infinite;
   filter: drop-shadow(0 0 20px var(--color-accent-glow));
 }
