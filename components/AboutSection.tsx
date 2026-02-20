@@ -40,7 +40,7 @@ export default function AboutSection() {
                 {/* Contact Badges */}
                 <div style={{ display: 'flex', gap: '12px', width: '100%', justifyContent: 'center', flexWrap: 'wrap' }}>
                   <a 
-                    href="https://www.linkedin.com/in/andrew-onukwu-5b4a7a22a/" 
+                    href="https://www.linkedin.com/company/digitaltechscribe" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className={styles.statusBadge}
