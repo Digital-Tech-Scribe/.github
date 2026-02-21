@@ -87,26 +87,14 @@ export default function AboutSection() {
 
               <div className={styles.body}>
                 <p>
-                  <strong>Digital Tech Scribe</strong> exists to bridge the gap between small-scale startups and the global recognition they deserve. I help businesses dominate the digital landscape through strategic web development, viral social media content, and high-impact design that commands instant authority.
+                  <strong>Digital Tech Scribe</strong> is a premium digital partner built on the foundation of technical precision and unwavering accountability. I help ambitious startups dominate the digital landscape through strategic web development, high-performance architecture, and brand transformations that command instant authority.
                 </p>
                 <p>
-                  Currently operating as a dedicated "lone wolf" founder, I provide bridge-building solutions and 100% accountability. My mission is to ensure that from the very first glance, your brand conveys the trust, assurance, and professional excellence needed to scale in a competitive digital world.
+                  Operating as a dedicated "lone wolf" founder with a background as a Lead Software Developer, I provide bridge-building solutions where trust is the primary currency. My mission is to ensure your brand conveys the professional excellence and global-ready assurance needed to scale in a competitive digital world.
                 </p>
               </div>
 
               <div className={styles.values}>
-                <div className={styles.value}>
-                  <div className={styles.valueIcon}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                      <polyline points="22 4 12 14.01 9 11.01" />
-                    </svg>
-                  </div>
-                  <div>
-                    <strong>Chief Executive Officer — Digital Tech Scribe</strong>
-                    <p>Leading the vision and execution of premium responsive web design and tailored digital development solutions.</p>
-                  </div>
-                </div>
                 <div className={styles.value}>
                   <div className={styles.valueIcon}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -119,19 +107,7 @@ export default function AboutSection() {
                     <p>Spearheading software development, advanced problem-solving, and driving digital accountability initiatives.</p>
                   </div>
                 </div>
-                <div className={styles.value}>
-                  <div className={styles.valueIcon}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                      <polyline points="2 17 12 22 22 17" />
-                      <polyline points="2 12 12 17 22 12" />
-                    </svg>
-                  </div>
-                  <div>
-                    <strong>Construction Project Manager — Tiles & Fitt Ltd</strong>
-                    <p>Merging building construction site management logic with robust technical front-end development capabilities.</p>
-                  </div>
-                </div>
+
               </div>
             </div>
           </ScrollReveal>

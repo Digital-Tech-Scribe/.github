@@ -18,15 +18,14 @@ export default function HeroSection() {
             {/* Badge */}
             <div className={styles.badge}>
               <span className={styles.badgeDot} />
-              <span>Digital Presence Experts</span>
+              <span>Premium Web Architecture</span>
             </div>
 
             {/* Headline */}
             <h1 className={styles.headline}>
-              Your Business{' '}
-              <span className={styles.headlineAccent}>Deserves</span>
+              Elite Digital <span className={styles.headlineAccent}>Architecture</span>
               <br />
-              to Be Seen.
+              & Strategic Strategy.
             </h1>
 
             {/* Sub-headline */}
@@ -94,9 +93,7 @@ export default function HeroSection() {
               <div className={`${styles.platformBadge} ${styles.badge4}`}>
                 <span>Facebook</span>
               </div>
-              <div className={`${styles.platformBadge} ${styles.badge5}`}>
-                <span>X</span>
-              </div>
+
 
               {/* Floating stat cards */}
               <div className={styles.statCard1}>
