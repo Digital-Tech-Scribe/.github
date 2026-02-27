@@ -18,20 +18,19 @@ export default function HeroSection() {
             {/* Badge */}
             <div className={styles.badge}>
               <span className={styles.badgeDot} />
-              <span>Premium Web Architecture</span>
+              <span>Global Online Presence</span>
             </div>
 
             {/* Headline */}
             <h1 className={styles.headline}>
-              Elite Digital <span className={styles.headlineAccent}>Architecture</span>
+              Build a Powerful <span className={styles.headlineAccent}>Online Presence</span>
               <br />
-              & Strategic Strategy.
+              & Global Brand.
             </h1>
 
             {/* Sub-headline */}
             <p className={styles.subheadline}>
-              We build your online presence — from stunning websites to viral social content.
-              Let's put your brand on the map.
+              Digital Tech Scribe helps businesses of all sizes establish a commanding online presence. From engaging websites and social media content to professional flyer design, we promote your brand globally.
             </p>
 
             {/* CTA Buttons */}
@@ -51,15 +50,15 @@ export default function HeroSection() {
             <div className={styles.trustRow}>
               <div className={styles.trustItem}>
                 <span className={styles.trustIcon}>✓</span>
-                <span>Websites that convert</span>
+                <span>Website Engagement</span>
               </div>
               <div className={styles.trustItem}>
                 <span className={styles.trustIcon}>✓</span>
-                <span>Social media growth</span>
+                <span>Social Media Strategy</span>
               </div>
               <div className={styles.trustItem}>
                 <span className={styles.trustIcon}>✓</span>
-                <span>Content that speaks</span>
+                <span>Creative Content & Design</span>
               </div>
             </div>
           </div>
@@ -91,7 +90,7 @@ export default function HeroSection() {
                 <span>YouTube</span>
               </div>
               <div className={`${styles.platformBadge} ${styles.badge4}`}>
-                <span>Facebook</span>
+                <span>Facebook & X</span>
               </div>
 
 
@@ -101,8 +100,8 @@ export default function HeroSection() {
                 <span className={styles.statLabel}>Dedicated</span>
               </div>
               <div className={styles.statCard2}>
-                <span className={styles.statNumber}>5+</span>
-                <span className={styles.statLabel}>Platforms</span>
+                <span className={styles.statNumber}>Global</span>
+                <span className={styles.statLabel}>Reach</span>
               </div>
             </div>
           </div>
